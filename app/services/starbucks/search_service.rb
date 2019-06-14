@@ -1,4 +1,4 @@
-module Movies
+module Starbucks
   class SearchService
     def run(url, pattern, &block)
       charset = nil
