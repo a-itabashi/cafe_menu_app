@@ -1,7 +1,7 @@
 <template>
   <div class="lists-block">
     <b-row class="row-eq-height">
-      <b-col sm="6" md="3" v-for="list in starbucks_lists" v-if="starbucks_lists"> 
+      <b-col sm="6" md="3" v-for="list in pronto_lists" v-if="pronto_lists"> 
           <b-link :href="list.link" target="_blank"> 
             <div class="per-name">{{list.name}}</div>
             <div class="per-price">{{list.price}}</div>
@@ -13,24 +13,23 @@
   </div>
 </template>
 
-
 <script>
   import axios from 'axios';
   
   export default{
     data: function(){
       return{
-        starbucks_lists:[],
+        pronto_lists:[],
       }
     },
     mounted: function(){
-      this.fetch_starbucks();
+      this.fetch_prontos();
     },
     methods: {
-      fetch_starbucks: function(){
-        axios.get('/api/v1/starbucks').then((response) => {
+      fetch_prontos: function(){
+        axios.get('/api/v1/prontos').then((response) => {
           for(var i = 0; i < response.data.length; i++) {
-             this.starbucks_lists.push(response.data[i]);
+             this.pronto_lists.push(response.data[i]);
           }
           console.log(response.data[0])
         },(error) => {
