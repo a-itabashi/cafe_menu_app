@@ -6,7 +6,7 @@ class Api::V1::StarbucksController < ApplicationController
     @lists = []
     url = "https://www.starbucks.co.jp/"
     
-    Starbucks::SearchService.new.run('https://www.starbucks.co.jp/new/lineup/?nid=mm&mode=cafe_pc_002', '.recommend') do |node|
+    Scrapes::SearchService.new.run('https://www.starbucks.co.jp/new/lineup/?nid=mm&mode=cafe_pc_002', '.recommend') do |node|
       keys = ["name", "image", "price", "link"]
 
       values = []
