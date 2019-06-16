@@ -1,4 +1,4 @@
-module Starbucks
+module Scrapes
   class SearchService
     def run(url, pattern, &block)
       charset = nil
