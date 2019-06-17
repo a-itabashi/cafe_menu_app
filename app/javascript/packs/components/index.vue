@@ -49,7 +49,10 @@
 }
 
 .img{
-  width:100%;
+  max-width:80%;
+  display: block;
+  height:auto;
+  margin: 0 auto;
 }
 
 </style>
