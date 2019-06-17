@@ -1,8 +1,8 @@
 <template>
   <div class="lists-block">
-    <h1 class="text-center">ドトール</h1>
+    <h1 class="text-center">タリーズコーヒー</h1>
     <b-row class="row-eq-height">
-      <b-col sm="6" md="3" v-for="list in doutor_lists" v-if="doutor_lists"> 
+      <b-col sm="6" md="3" v-for="list in tullys_lists" v-if="tullys_lists"> 
           <b-link :href="list.link" target="_blank"> 
             <div class="per-name">{{list.name}}</div>
             <div class="per-price">{{list.price}}</div>
@@ -14,23 +14,24 @@
   </div>
 </template>
 
+
 <script>
   import axios from 'axios';
   
   export default{
     data: function(){
       return{
-        doutor_lists:[],
+        tullys_lists:[],
       }
     },
     mounted: function(){
-      this.fetch_doutors();
+      this.fetch_tullys();
     },
     methods: {
-      fetch_doutors: function(){
-        axios.get('/api/v1/doutors').then((response) => {
+      fetch_tullys: function(){
+        axios.get('/api/v1/tullys').then((response) => {
           for(var i = 0; i < response.data.length; i++) {
-             this.doutor_lists.push(response.data[i]);
+             this.tullys_lists.push(response.data[i]);
           }
           console.log(response.data[0])
         },(error) => {
@@ -42,7 +43,6 @@
 </script>
 
 <style scoped>
-
 .row-eq-height {
     display: flex;
     flex-wrap: wrap;

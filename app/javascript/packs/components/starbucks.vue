@@ -1,5 +1,6 @@
 <template>
   <div class="lists-block">
+    <h1 class="text-center">スターバックス</h1>
     <b-row class="row-eq-height">
       <b-col sm="6" md="3" v-for="list in starbucks_lists" v-if="starbucks_lists"> 
           <b-link :href="list.link" target="_blank"> 
@@ -57,7 +58,7 @@
 }
 
 .lists-block{
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 </style>
