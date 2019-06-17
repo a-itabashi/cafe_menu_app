@@ -15,5 +15,6 @@ module CafeMenuApp
     config.middleware.use ActionDispatch::Flash
 
     config.autoload_paths += %W(#{config.root}/app/services)
+
   end
 end
