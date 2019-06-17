@@ -31,7 +31,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12966.84005395225!2d139.69729794229832!3d35.65951562561044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5riL6LC344CA44K_44Oq44O844K644Kz44O844OS44O8!5e0!3m2!1sja!2sjp!4v1560747334579!5m2!1sja!2sjp" width=100% frameborder="0" style="border:0" allowfullscreen></iframe>
       <hr>
     </div>
-    <img class="img" src="/assets/cafe_img.jpg" />
+    <img class="img" src="/public/assets/cafe_img-423f032f7c5341302c9283bc5f2c85f0162419ed2481da64e0e48f6f3bcfce9a.jpg">
   </div>
 </template>
 
@@ -50,9 +50,8 @@
   font-family: 'Amatic SC', cursive;
 }
 
-img{
+.img{
   width:100%;
-
 }
 
 </style>
