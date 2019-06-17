@@ -49,9 +49,9 @@
 }
 
 .img{
-  max-width:80%;
+  width:700px;
   display: block;
-  height:auto;
+  height:150px;
   margin: 0 auto;
 }
 
