@@ -1,6 +1,7 @@
 <template>
   <div class="lists-block">
     <h1 class="text-center">Starbucks Coffee</h1>
+    <div v-show="loading" class="loader">しばらくお待ちください...</div>
     <b-row class="row-eq-height">
       <b-col sm="6" md="3" v-for="list in starbucks_lists" v-if="starbucks_lists"> 
           <b-link :href="list.link" target="_blank"> 
@@ -22,6 +23,7 @@
     data: function(){
       return{
         starbucks_lists:[],
+        loading: true
       }
     },
     mounted: function(){
@@ -34,6 +36,7 @@
              this.starbucks_lists.push(response.data[i]);
           }
           console.log(response.data[0])
+          this.loading = false;
         },(error) => {
              console.log(error);
         });
@@ -43,6 +46,11 @@
 </script>
 
 <style scoped>
+.loader{
+  text-align: center;
+  font-size:1.5rem;
+}
+
 h1{
   font-family: 'Amatic SC', cursive;
 }
