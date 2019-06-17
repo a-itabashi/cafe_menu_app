@@ -5,7 +5,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="shop-list">
-          <b-nav-item href="/starbucks" active>Starbucks</b-nav-item>
+          <b-nav-item href="/starbucks" active>Starbucks Coffee</b-nav-item>
           <b-nav-item href="/doutor" active>DOUTOR</b-nav-item>
           <b-nav-item href="/pronto" active>PRONTO</b-nav-item>
           <b-nav-item href="/tullys" active>Tully's Coffee</b-nav-item>

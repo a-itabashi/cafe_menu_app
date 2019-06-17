@@ -1,6 +1,6 @@
 <template>
   <div class="lists-block">
-    <h1 class="text-center">タリーズコーヒー</h1>
+    <h1 class="text-center">Tully's Coffee</h1>
     <b-row class="row-eq-height">
       <b-col sm="6" md="3" v-for="list in tullys_lists" v-if="tullys_lists"> 
           <b-link :href="list.link" target="_blank"> 
@@ -43,6 +43,10 @@
 </script>
 
 <style scoped>
+h1{
+  font-family: 'Amatic SC', cursive;
+}
+
 .row-eq-height {
     display: flex;
     flex-wrap: wrap;

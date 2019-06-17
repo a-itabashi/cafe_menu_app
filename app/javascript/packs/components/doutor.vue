@@ -1,6 +1,6 @@
 <template>
   <div class="lists-block">
-    <h1 class="text-center">ドトール</h1>
+    <h1 class="text-center">DOUTOR</h1>
     <b-row class="row-eq-height">
       <b-col sm="6" md="3" v-for="list in doutor_lists" v-if="doutor_lists"> 
           <b-link :href="list.link" target="_blank"> 
@@ -42,6 +42,9 @@
 </script>
 
 <style scoped>
+h1{
+  font-family: 'Amatic SC', cursive;
+}
 
 .row-eq-height {
     display: flex;
