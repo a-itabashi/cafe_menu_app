@@ -1,5 +1,6 @@
 <template>
   <div class="lists-block">
+    <h1 class="text-center">プロント</h1>
     <b-row class="row-eq-height">
       <b-col sm="6" md="3" v-for="list in pronto_lists" v-if="pronto_lists"> 
           <b-link :href="list.link" target="_blank"> 

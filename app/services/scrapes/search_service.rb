@@ -9,6 +9,7 @@ module Scrapes
       doc = Nokogiri::HTML.parse(html, nil, charset)
       doc.css(pattern).each do |node|
         block.call(node)
+  
       end
     end
   end
