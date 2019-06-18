@@ -24,15 +24,15 @@
 - Vue.jsを導入
     - Ruby on RailsにWebpackerを使用し、Vue.jsを導入。
 - Service層を導入
-    - スクレイピング処理を担当するコードをモジュール化し、再利用を容易にした。
+    - スクレイピング処理を担当するコードをモジュール化し、再利用を容易にした。  
     ※ Fat controllerとなっているが、可読性を重視し、この構成をとった。
 
 ## その他使用した技術
 ### フロントエンド
 - Vue.js
-  - Vue Router
-  - axios
-  - Bootstrap
+    - Vue Router
+    - axios
+- Bootstrap
 
 ### サーバーサイド
 - Ruby on Rails 5.2.3(Ruby 2.6.3)
