@@ -6,7 +6,6 @@ class Api::V1::TullysController < ApplicationController
     @lists = []
     url = "https://www.tullys.co.jp"
 
-
     # ドリンク
     Scrapes::SearchService.new.run('https://www.tullys.co.jp/menu/drink/', '.item_list li') do |node|
       keys = ["name", "image", "link"]
